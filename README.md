@@ -12,7 +12,7 @@
 
 ## 在线体验
 
-[打开《照见》在线版本](https://mahaoyue98.github.io/GPT5.6-SOL-zhaojian-living-archive/)
+[打开《照见》在线版本](https://momo0615.icu/)
 
 ## 创作者自述
 
