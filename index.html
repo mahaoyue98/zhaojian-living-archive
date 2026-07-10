@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#e8e5de" />
+    <meta name="description" content="照见，是一件由你的注意力亲手塑成的活体作品。" />
+    <title>照见 — 注意力的活体档案</title>
+    </head>
+  <body data-state="stillness">
+    <a class="skip" href="#experience">进入照见</a>
+    <canvas id="material" aria-hidden="true"></canvas>
+    <canvas id="feedback" aria-hidden="true"></canvas>
+    <div class="material-fallback" aria-hidden="true"></div>
+    <div class="grain" aria-hidden="true"></div>
+
+    <main id="experience" class="experience">
+      <header class="masthead">
+        <a class="wordmark" href="#experience" aria-label="照见首页">照见<span>○</span></a>
+        <div class="session"><span>注意力档案</span><b id="session-id">N—0710.0843</b></div>
+        <button class="sound" id="sound-toggle" type="button" aria-pressed="false">
+          <span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span>环境声关闭</span>
+        </button>
+      </header>
+
+      <nav class="states" aria-label="选择注意力状态">
+        <p>选择此刻的质地</p>
+        <button class="state-button active" type="button" data-state="stillness" aria-pressed="true">
+          <span class="state-index">一</span><span>静观</span><i></i>
+        </button>
+        <button class="state-button" type="button" data-state="curiosity" aria-pressed="false">
+          <span class="state-index">二</span><span>好奇</span><i></i>
+        </button>
+        <button class="state-button" type="button" data-state="resolve" aria-pressed="false">
+          <span class="state-index">三</span><span>笃定</span><i></i>
+        </button>
+      </nav>
+
+      <section class="thesis" aria-labelledby="thesis-title">
+        <p class="thesis-label">一件关于<span id="state-noun">静观</span>的感知器</p>
+        <h1 id="thesis-title"><span>当世界</span><em>不再索取</em><span>何物仍在</span></h1>
+        <div class="thesis-foot">
+          <p id="state-copy">让注意力缓慢沉降。此刻，不必抵达任何结果。</p>
+          <span>二〇二六 · 第一版</span>
+        </div>
+      </section>
+
+      <section class="gesture-zone" aria-label="生成注意力痕迹">
+        <button class="hold-button" id="hold-button" type="button" aria-describedby="hold-instruction">
+          <svg viewBox="0 0 160 160" aria-hidden="true">
+            <circle class="hold-track" cx="80" cy="80" r="74" />
+            <circle class="hold-progress" cx="80" cy="80" r="74" />
+          </svg>
+          <span class="hold-core"><i></i></span>
+          <span class="hold-copy"><b>长按</b><small>留下此刻的形状</small></span>
+        </button>
+        <p id="hold-instruction">持续长按，进入刻写空间</p>
+      </section>
+
+      <aside class="instrument" aria-label="实时材质读数">
+        <div class="instrument-rule"><span id="phase-marker"></span></div>
+        <div class="reading"><span>相位</span><b id="phase-value">0.000</b></div>
+        <div class="reading"><span>漂移</span><b id="drift-value">0.18</b></div>
+        <div class="reading"><span>心境</span><b id="field-value">静</b></div>
+        <p>指针与触摸<br />正在改变材质</p>
+      </aside>
+
+      <footer class="footer-note">
+        <p>一分钟，一次照见。<br />不上传，不留存。</p>
+        <button id="about-open" type="button">关于作品 <span>↗</span></button>
+      </footer>
+    </main>
+
+    <section class="inscription" id="inscription" aria-labelledby="inscription-title" aria-hidden="true">
+      <div class="inscription-head"><span>第二幕 / 刻写</span><b id="inscription-time">12.0</b></div>
+      <h2 id="inscription-title">请移动，仿佛这片场<br /><em>真的能够记得。</em></h2>
+      <p class="inscription-guide">移动的速度成为材质<br />停顿的时刻成为密度</p>
+      <div class="inscription-progress"><i id="inscription-progress"></i></div>
+      <button id="release-now" type="button">提前凝结 <span>↗</span></button>
+      <div class="velocity-readout"><span>速度</span><b id="velocity-value">0.000</b></div>
+    </section>
+
+    <section class="trace-overlay" id="trace-overlay" aria-labelledby="trace-title" aria-hidden="true">
+      <canvas id="trace-canvas" aria-hidden="true"></canvas>
+      <div class="trace-header">
+        <span>照见 / 私人痕迹</span><b id="trace-code">照—000000</b>
+      </div>
+      <div class="trace-copy">
+        <p id="trace-prologue">你的注意力<br />留下了一种暂时的形状。</p>
+        <h2 id="trace-title">一份安静的<br /><em>在场证明。</em></h2>
+        <p class="trace-reading" id="trace-reading"></p>
+      </div>
+      <div class="trace-actions">
+        <button id="download-trace" type="button">保存此刻 <span>↓</span></button>
+        <button id="restart-trace" type="button">回到感知场</button>
+      </div>
+      <p class="trace-meta" id="trace-meta">静观 · 仅保存在本地</p>
+    </section>
+
+    <dialog class="about-dialog" id="about-dialog" aria-labelledby="about-title">
+      <button class="dialog-close" id="about-close" type="button" aria-label="关闭">×</button>
+      <p class="dialog-index">作品说明</p>
+      <h2 id="about-title">注意力，是最后一种<br />只属于你的材质。</h2>
+      <div class="dialog-columns">
+        <p>「照见」不衡量效率。它把你选择的心境、停留的时间与移动的方式，凝结成一份视觉痕迹。</p>
+        <p>这一切只发生在你的浏览器里。离开之后，场便消散；你保存的，只有这一刻亲手形成的图像。</p>
+      </div>
+    </dialog>
+
+    <div class="status" id="status" role="status" aria-live="polite"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
