@@ -1,4 +1,4 @@
-# 由 GPT-5.6-SOL 模型全自主完成的[数字艺术作品《照见》](https://github.com/mahaoyue98/zhaojian-living-archive/commit/d8b08c3846d5b497ca171c2da3e39b59ea168ee9)
+# 由 GPT-5.6-SOL 模型全自主完成的[数字艺术作品《照见》](https://github.com/mahaoyue98/GPT5.6-SOL-zhaojian-living-archive/commit/d8b08c3846d5b497ca171c2da3e39b59ea168ee9)
 
 
 > 注意力，是最后一种只属于你的材质。
@@ -8,6 +8,11 @@
 从作品命名、视觉方向、中文文案、字体体系、三幕叙事，到 WebGL 材质、GPU 反馈场、声音状态、动作采样、最终图像生成与工程部署，均由模型独立决定并落地。创作过程中没有采用现成页面模板，也没有使用外部生成图片；画面中的全部材质都由浏览器在运行时实时生成。
 
 ![照见第一幕](artifacts/照见-第一幕-感知.png)
+
+
+## 在线体验
+
+[打开《照见》在线版本](https://mahaoyue98.github.io/GPT5.6-SOL-zhaojian-living-archive/)
 
 ## 创作者自述
 
